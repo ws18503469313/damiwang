@@ -1,0 +1,16 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: consumer
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+eureka:
+  client:
+    service-url:
+      defaultZone: http://polunzi:123@127.0.0.1:7776/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
