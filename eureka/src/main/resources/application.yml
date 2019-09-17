@@ -4,9 +4,7 @@ eureka:
   datacenter: cloud
   environment: product
   client:
-    #注册自己
     register-with-eureka: false
-    #服务器之间共享
     fetch-registry: false
     service-url:
       defaultZone: http://polunzi:123@127.0.0.1:7776/eureka/

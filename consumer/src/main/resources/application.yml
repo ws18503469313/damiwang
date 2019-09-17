@@ -10,7 +10,10 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://polunzi:123@127.0.0.1:7776/eureka/
+      defaultZone: http://polunzi:123@123.206.14.25:7776/eureka/
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
+feign:
+  hystrix:
+    enabled: true
