@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.provide.mapper.SysAccessMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.provide.model.SysAccess">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="char" property="Id" />
+            <id column="url" jdbcType="varchar" property="Url" />
+            <id column="title" jdbcType="varchar" property="Title" />
+            <id column="created_time" jdbcType="datetime" property="CreatedTime" />
+            <id column="parent" jdbcType="char" property="Parent" />
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,24 @@
+server:
+  port: 7776
+eureka:
+  datacenter: cloud
+  environment: product
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://polunzi:123@127.0.0.1:7776/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  security:
+    user:
+      name: polunzi
+      password: 123
+security:
+  basic:
+    enabled: true
