@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmItemCommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmItemComment">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="itemId" jdbcType="bigint" property="Itemid" />
+            <id column="userId" jdbcType="bigint" property="Userid" />
+            <id column="score" jdbcType="int" property="Score" />
+            <id column="content" jdbcType="tex" property="Content" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

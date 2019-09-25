@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmSchedulerSeatPriceMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmSchedulerSeatPrice">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="price" jdbcType="decimal" property="Price" />
+            <id column="areaLevel" jdbcType="int" property="Arealevel" />
+            <id column="scheduleId" jdbcType="bigint" property="Scheduleid" />
+            <id column="seatNum" jdbcType="int" property="Seatnum" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmCinemaSeatMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmCinemaSeat">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="x" jdbcType="int" property="X" />
+            <id column="y" jdbcType="int" property="Y" />
+            <id column="areaLevel" jdbcType="int" property="Arealevel" />
+            <id column="cinemaId" jdbcType="bigint" property="Cinemaid" />
+            <id column="sort" jdbcType="int" property="Sort" />
+            <id column="status" jdbcType="int" property="Status" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

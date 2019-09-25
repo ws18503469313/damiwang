@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmOrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmOrder">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="orderNo" jdbcType="varchar" property="Orderno" />
+            <id column="userId" jdbcType="bigint" property="Userid" />
+            <id column="schedulerId" jdbcType="bigint" property="Schedulerid" />
+            <id column="itemId" jdbcType="bigint" property="Itemid" />
+            <id column="itemName" jdbcType="varchar" property="Itemname" />
+            <id column="wxTradeNo" jdbcType="varchar" property="Wxtradeno" />
+            <id column="aliTradeNo" jdbcType="varchar" property="Alitradeno" />
+            <id column="orderType" jdbcType="int" property="Ordertype" />
+            <id column="payType" jdbcType="varchar" property="Paytype" />
+            <id column="totalCount" jdbcType="int" property="Totalcount" />
+            <id column="area" jdbcType="bigint" property="Area" />
+            <id column="sourceType" jdbcType="int" property="Sourcetype" />
+            <id column="isNeedInvoice" jdbcType="int" property="Isneedinvoice" />
+            <id column="invoiceType" jdbcType="int" property="Invoicetype" />
+            <id column="invoiceHead" jdbcType="varchar" property="Invoicehead" />
+            <id column="invoiceNo" jdbcType="varchar" property="Invoiceno" />
+            <id column="isNeedInsurance" jdbcType="int" property="Isneedinsurance" />
+            <id column="totalAmount" jdbcType="decimal" property="Totalamount" />
+            <id column="insuranceAmount" jdbcType="decimal" property="Insuranceamount" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

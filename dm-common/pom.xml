@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cloud</groupId>
-    <artifactId>com.cloud</artifactId>
+    <artifactId>com.cloud.common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>common</name>
     <description>common</description>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmTradeMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmTrade">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="varchar" property="Id" />
+            <id column="orderNo" jdbcType="varchar" property="Orderno" />
+            <id column="tradeNo" jdbcType="varchar" property="Tradeno" />
+            <id column="payMethod" jdbcType="int" property="Paymethod" />
+            <id column="amount" jdbcType="decimal" property="Amount" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

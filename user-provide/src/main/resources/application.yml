@@ -1,24 +1,37 @@
 server:
-  port: 7776
-eureka:
-  datacenter: cloud
-  environment: product
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://polunzi:123@127.0.0.1:7776/eureka/
-  server:
-    wait-time-in-ms-when-sync-empty: 0
+  port: 10000
 spring:
+  application:
+    name: user-provide
   devtools:
     restart:
       enabled: true
       additional-paths: src/main/java
-  security:
-    user:
-      name: polunzi
-      password: 123
-security:
-  basic:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/jshm?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: Ws123456.
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: mysql
+    initialization-mode: always
+    continue-on-error: true
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      max-lifetime: 180000
+      connection-timeout: 5000
+    tomcat:
+      test-on-borrow: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://polunzi:123@123.206.14.25:7776/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+feign:
+  hystrix:
     enabled: true
+

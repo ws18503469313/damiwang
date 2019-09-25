@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmItemMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmItem">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="itemName" jdbcType="varchar" property="Itemname" />
+            <id column="abstractMessage" jdbcType="tex" property="Abstractmessage" />
+            <id column="itemType1Id" jdbcType="bigint" property="Itemtype1id" />
+            <id column="itemType1Name" jdbcType="varchar" property="Itemtype1name" />
+            <id column="itemType2Id" jdbcType="bigint" property="Itemtype2id" />
+            <id column="itemType2Name" jdbcType="varchar" property="Itemtype2name" />
+            <id column="state" jdbcType="int" property="State" />
+            <id column="basicDescription" jdbcType="tex" property="Basicdescription" />
+            <id column="projectDescription" jdbcType="tex" property="Projectdescription" />
+            <id column="reminderDescription" jdbcType="tex" property="Reminderdescription" />
+            <id column="longitude" jdbcType="varchar" property="Longitude" />
+            <id column="latitude" jdbcType="varchar" property="Latitude" />
+            <id column="isBanner" jdbcType="int" property="Isbanner" />
+            <id column="isRecommend" jdbcType="int" property="Isrecommend" />
+            <id column="avgScore" jdbcType="decimal" property="Avgscore" />
+            <id column="commentCount" jdbcType="int" property="Commentcount" />
+            <id column="cinemaId" jdbcType="bigint" property="Cinemaid" />
+            <id column="startTime" jdbcType="datetim" property="Starttime" />
+            <id column="endTime" jdbcType="datetim" property="Endtime" />
+            <id column="minPrice" jdbcType="decimal" property="Minprice" />
+            <id column="maxPrice" jdbcType="decimal" property="Maxprice" />
+            <id column="ageGroup" jdbcType="int" property="Agegroup" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

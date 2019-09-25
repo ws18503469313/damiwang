@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmSchedulerMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmScheduler">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="title" jdbcType="varchar" property="Title" />
+            <id column="startTime" jdbcType="datetim" property="Starttime" />
+            <id column="endTime" jdbcType="datetim" property="Endtime" />
+            <id column="itemId" jdbcType="bigint" property="Itemid" />
+            <id column="cinemaId" jdbcType="bigint" property="Cinemaid" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

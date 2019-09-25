@@ -1,24 +1,16 @@
 server:
-  port: 7776
-eureka:
-  datacenter: cloud
-  environment: product
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://polunzi:123@127.0.0.1:7776/eureka/
-  server:
-    wait-time-in-ms-when-sync-empty: 0
+  port: 10001
 spring:
+  application:
+    name: user-consumer
   devtools:
     restart:
       enabled: true
       additional-paths: src/main/java
-  security:
-    user:
-      name: polunzi
-      password: 123
-security:
-  basic:
-    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://polunzi:123@123.206.14.25:7776/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.dao.DmCinemaMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.model.DmCinema">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="name" jdbcType="varchar" property="Name" />
+            <id column="address" jdbcType="varchar" property="Address" />
+            <id column="areaId" jdbcType="bigint" property="Areaid" />
+            <id column="areaName" jdbcType="varchar" property="Areaname" />
+            <id column="xLength" jdbcType="int" property="Xlength" />
+            <id column="yLength" jdbcType="int" property="Ylength" />
+            <id column="latitude" jdbcType="varchar" property="Latitude" />
+            <id column="longitude" jdbcType="varchar" property="Longitude" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>
