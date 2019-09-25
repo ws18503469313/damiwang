@@ -1,2 +1,15 @@
-server:
-  port: 7000
+spring:
+  application:
+    name: zipkin-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://polunzi:123@123.206.14.25:7776/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

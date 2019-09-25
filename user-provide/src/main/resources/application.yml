@@ -9,7 +9,7 @@ spring:
       additional-paths: src/main/java
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/jshm?useSSL=false&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://123.206.14.25:3306/jshm?useSSL=false&useUnicode=true&characterEncoding=utf8
     username: root
     password: Ws123456.
     driver-class-name: com.mysql.jdbc.Driver
@@ -23,7 +23,11 @@ spring:
       connection-timeout: 5000
     tomcat:
       test-on-borrow: true
-
+  zipkin:
+    base-url: http://127.0.0.1:8080/
+  sleuth:
+    sampler:
+      probability: 1.0
 eureka:
   client:
     service-url:
