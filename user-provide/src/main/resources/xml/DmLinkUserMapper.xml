@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.provide.mapper.DmLinkUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.provide.model.DmLinkUser">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="userId" jdbcType="bigint" property="Userid" />
+            <id column="name" jdbcType="varchar" property="Name" />
+            <id column="idCard" jdbcType="varchar" property="Idcard" />
+            <id column="cardType" jdbcType="int" property="Cardtype" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.provide.mapper.DmUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.cloud.provide.model.DmUser">
+        <!-- WARNING - @polunzi_auto_generated -->
+            <id column="id" jdbcType="bigint" property="Id" />
+            <id column="phone" jdbcType="varchar" property="Phone" />
+            <id column="password" jdbcType="varchar" property="Password" />
+            <id column="wxUserId" jdbcType="varchar" property="Wxuserid" />
+            <id column="realName" jdbcType="varchar" property="Realname" />
+            <id column="nickName" jdbcType="varchar" property="Nickname" />
+            <id column="sex" jdbcType="int" property="Sex" />
+            <id column="hobby" jdbcType="varchar" property="Hobby" />
+            <id column="idCard" jdbcType="varchar" property="Idcard" />
+            <id column="birthday" jdbcType="datetim" property="Birthday" />
+            <id column="createdTime" jdbcType="datetim" property="Createdtime" />
+            <id column="updatedTime" jdbcType="datetim" property="Updatedtime" />
+    </resultMap>
+
+
+</mapper>
