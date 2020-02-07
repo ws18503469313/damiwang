@@ -5,9 +5,9 @@ import com.cloud.provide.model.Course;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.cloud.utils.JSONResult;
 import feign.hystrix.FallbackFactory;
 import org.slf4j.Logger;
-import com.cloud.util.JSONResult;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;

@@ -5,9 +5,9 @@ import com.cloud.provide.model.Class;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.cloud.utils.JSONResult;
 import feign.hystrix.FallbackFactory;
 import org.slf4j.Logger;
-import com.cloud.util.JSONResult;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -33,21 +33,21 @@ public interface ClassFeginClient {
     * @Date: 2019-10-18
     */
     @RequestMapping(value = "/addClass",method = RequestMethod.POST)
-    public JSONResult addClass(@RequestBody Class class)throws Exception;
+    public JSONResult addClass(@RequestBody Class clz)throws Exception;
     /**
     *   通过条件查找,
     * @author polunzi
     * @Date: 2019-10-18
     */
     @RequestMapping(value = "/findClass",method = RequestMethod.POST)
-    public List<Class> findClass(@RequestBody Class class)throws Exception;
+    public List<Class> findClass(@RequestBody Class clz)throws Exception;
     /**
     *   更新
     * @author polunzi
     * @Date: 2019-10-18
     */
     @RequestMapping(value = "/updateClass",method = RequestMethod.POST)
-    public JSONResult updateClass(@RequestBody Class class)throws Exception;
+    public JSONResult updateClass(@RequestBody Class clz)throws Exception;
 
 
 }
@@ -62,22 +62,22 @@ class  ClassFactoryFallBack implements FallbackFactory<ClassFeginClient> {
 
             @Override
             public Class getClassById(@RequestParam("Id") Long Id)throws Exception{
-                Class class = new Class();
-                return class;
+                Class clz = new Class();
+                return clz;
             }
 
             @Override
-            public JSONResult addClass( Class class)throws Exception{
+            public JSONResult addClass( Class clz)throws Exception{
                 return null;
             }
 
             @Override
-            public JSONResult updateClass( Class class)throws Exception{
+            public JSONResult updateClass( Class clz)throws Exception{
                 return null;
             }
 
             @Override
-            public List<Class> findClass( Class class)throws Exception{
+            public List<Class> findClass( Class clz)throws Exception{
                 return new ArrayList<Class>();
             }
 
