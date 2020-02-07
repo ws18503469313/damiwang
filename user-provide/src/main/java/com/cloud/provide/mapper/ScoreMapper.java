@@ -1,7 +1,7 @@
 package com.cloud.provide.mapper;
 
 import com.cloud.provide.model.Score;
-import com.cloud.util.MyMapper;
+import com.cloud.utils.MyMapper;
 
 
 public interface ScoreMapper extends MyMapper<Score> {
